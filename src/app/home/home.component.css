@@ -1,0 +1,102 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: 'Mouse Memoirs', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+ .image{
+    text-align: center;
+    padding:30px 0px 0px 0px;
+ }
+nav{
+    background-color: rgb(14, 13, 13);
+     color: rgb(245, 12, 12);
+     padding: 0px 80px 0px 50px;
+}
+
+.navBottom{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.menuItem{
+    margin-right:50px;
+    cursor:pointer;
+    color:lightgray;
+    font-weight:400;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    font-size:50px
+}
+
+h4{
+    color:#571204 ;
+    text-align: center;
+}
+
+
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    display: inline-block;
+    margin: auto;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    /* background-color: dodgerblue; */
+    background:linear-gradient(to right,rgb(247, 247, 44),rgb(247, 161, 3),rgb(233, 77, 77));
+    /* color: white; */
+    color: black;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+  
+
+
+
+
+

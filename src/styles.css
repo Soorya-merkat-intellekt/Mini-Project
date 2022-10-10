@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body{
+    margin: 0;
+}
+.spacer{
+    flex-grow: 1;
+}
+
+.medium-list{
+    margin: auto;
+    width: 600px;
+    padding: 10px;
+}
+.list-viewer-wrapper{
+    border: 1px solid black;
+    box-shadow: 0 2px 2px black;
+    margin: 4px;
+}
+.list-header-title{
+    color: black;
+    background: black;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+.divider{
+    margin-top: 10px !important;
+}

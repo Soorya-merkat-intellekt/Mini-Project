@@ -1,0 +1,34 @@
+div{
+    text-align: left;
+    display: flex;
+}
+
+.quality{
+    text-align: right;
+    margin-bottom: 600px;
+}
+/* imag{
+    margin-bottom: 76637px; 
+}*/
+   
+
+
+footer{
+    display: flex;
+}
+
+.footerleft{
+    flex:2;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.menutitle{
+    font-size:16px;
+}
+
+.listitem{
+padding: 0px;
+}
+
