@@ -22,6 +22,9 @@ export class RegisterComponent implements OnInit {
         Validators.required,
         Validators.email
       ]],
+      'Contact No':[this.user.contact,[
+        Validators.required
+      ]],
       'password':[this.user.password,[
         Validators.required,
         Validators.minLength(6),
@@ -30,7 +33,7 @@ export class RegisterComponent implements OnInit {
     })
   }
   onRegisterSubmit(){
-    alert(this.user.name+' '+this.user.email+' '+this.user.password+' ')
+    alert(this.user.name+' '+this.user.email+' '+this.user.contact+' '+this.user.password+' ')
   }
 
 }

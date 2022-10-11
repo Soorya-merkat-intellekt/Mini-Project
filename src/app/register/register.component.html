@@ -4,7 +4,7 @@
             <div class="list-header-title">
                 REGISTER
             </div>
-            <form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && onRegisterSubmit()" novalidate>
+            <form [formGroup]="registerForm" action="register.js" (ngSubmit)="registerForm.valid && onRegisterSubmit()" novalidate>
                 <div class="form-container">
                     <mat-form-field>
                         <input id="name"
@@ -21,6 +21,13 @@
                         placeholder="Enter Your E-Mail">
                     </mat-form-field>
                     <mat-form-field>
+                        <input id="contact"
+                        matInput
+                        formControlName="Contact No"
+                        [(ngModel)]="user.contact"
+                        placeholder="Enter Your Contact Number">
+                    </mat-form-field>
+                    <mat-form-field>
                         <input id="password"
                         matInput
                         formControlName="password"
@@ -32,8 +39,7 @@
                         </mat-icon>
                     </mat-form-field>
                     <button mat-button type="submit" mat-raised-button mat-primary [disabled]="!registerForm.valid">Register</button>
-                    <button mat-button routerLink="/login" class="divider">Login</button>
-                
+                    <!-- <button mat-button routerLink="/login" class="divider">Login</button> -->
                 </div>
             </form>
         </div>
