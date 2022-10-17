@@ -9,9 +9,9 @@ body{
 }
 
 .medium-list{
-    margin: auto;
-    width: 600px;
-    padding: 10px;
+    margin: 10rem auto;
+    width: 30rem;
+    /* padding: 10px; */
 }
 .list-viewer-wrapper{
     border: 1px solid black;
@@ -19,8 +19,9 @@ body{
     margin: 4px;
 }
 .list-header-title{
-    color: black;
-    background: black;
+    color: #C5C5C5;
+    background-color: black;
+    text-align: center;
     padding: 8px 20px;
     font-weight: bold;
 }

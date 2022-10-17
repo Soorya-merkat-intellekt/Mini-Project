@@ -1,4 +1,14 @@
 <body>
+    <mat-toolbar class="navbar fixed-top" style="background-color: rgba(78, 169, 255, 0.5);margin-top: 0px;">
+        <mat-toolbar-row>
+            <button mat-button routerLink="/home"> <b> HOME </b> </button>
+            <button mat-button routerLink="/about"> <b> ABOUT </b> </button>
+            <button mat-button routerLink="/contact"> <b> CONTACT </b> </button>
+            <span class="spacer"></span>
+            <button mat-button routerLink="/register"> <b> REGISTER </b> </button>
+            <button mat-button routerLink="/login"> <b> LOGIN </b> </button>
+        </mat-toolbar-row>
+    </mat-toolbar>
     <div class="medium-list">
         <div class="list-viewer-wrapper">
             <div class="list-header-title">
@@ -38,7 +48,7 @@
                             {{hide?'visibility':'visibility_off'}}
                         </mat-icon>
                     </mat-form-field>
-                    <button mat-button type="submit" mat-raised-button mat-primary [disabled]="!registerForm.valid">Register</button>
+                    <button mat-button type="submit" mat-raised-button mat-primary class="btn btn-primary" style="text-align: center;">Register</button>
                     <!-- <button mat-button routerLink="/login" class="divider">Login</button> -->
                 </div>
             </form>
